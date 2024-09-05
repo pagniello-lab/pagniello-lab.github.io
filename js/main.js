@@ -205,7 +205,7 @@
         const modals = [];
 
         folioLinks.forEach(function(link) {
-            let modalbox = link.getAttribute('href');
+            // let modalbox = link.getAttribute('href');
             let instance = basicLightbox.create(
                 document.querySelector(modalbox),
                 {
@@ -280,7 +280,7 @@
     * ------------------------------------------------------ */
     const ssBackToTop = function() {
 
-        const pxShow = 900;
+        const pxShow = 200;
         const goTopButton = document.querySelector(".ss-go-top");
 
         if (!goTopButton) return;

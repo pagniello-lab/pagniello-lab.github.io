@@ -3864,7 +3864,7 @@ input[type="button"].btn--label {
   margin-top: 0;
   margin-bottom: var(--vspace-0_25);
   color: rgba(255, 255, 255, 0.4);
-  text-align: center;
+  text-align: left;
 }
 
 .s-about__pic {
