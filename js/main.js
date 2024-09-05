@@ -205,8 +205,8 @@
         const modals = [];
 
         folioLinks.forEach(function(link) {
-            /* let modalbox = link.getAttribute('href');
-            let instance = basicLightbox.create(
+            let modalbox = link.getAttribute('href');
+            /* let instance = basicLightbox.create(
                 document.querySelector(modalbox),
                 {
                     onShow: function(instance) {
