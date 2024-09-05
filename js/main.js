@@ -199,14 +199,14 @@
 
    /* Lightbox
     * ------------------------------------------------------ */
-    const ssLightbox = function() {
+    /* const ssLightbox = function() {
 
         const folioLinks = document.querySelectorAll('.folio-item a');
         const modals = [];
 
         folioLinks.forEach(function(link) {
             let modalbox = link.getAttribute('href');
-            /* let instance = basicLightbox.create(
+            let instance = basicLightbox.create(
                 document.querySelector(modalbox),
                 {
                     onShow: function(instance) {
@@ -219,7 +219,7 @@
                         });
                     }
                 }
-            ) */
+            )
             modals.push(instance);
         });
 
@@ -230,7 +230,26 @@
             });
         });
 
-    };  // end ssLightbox
+    };  */
+
+
+const ssLightbox = function() {
+    const folioLinks = document.querySelectorAll('.folio-item a');
+
+    folioLinks.forEach(function(link) {
+        link.addEventListener("click", function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+}; // end ssLightbox
 
 
    /* Alert boxes
