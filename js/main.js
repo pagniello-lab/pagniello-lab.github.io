@@ -219,8 +219,8 @@
                         });
                     }
                 }
-            )
-            modals.push(instance); */
+            ) */
+            modals.push(instance);
         });
 
         folioLinks.forEach(function(link, index) {
