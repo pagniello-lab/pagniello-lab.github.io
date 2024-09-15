@@ -4829,7 +4829,7 @@ input[type="button"].btn--label {
 }
 
 .s-footer a {
-  color: white;
+  color: var(--color-1);
 }
 
 .s-footer a:hover, .s-footer a:focus {
