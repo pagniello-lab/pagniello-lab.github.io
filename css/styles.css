@@ -4021,6 +4021,13 @@ input[type="button"].btn--label {
   margin-right: .2rem;
 }
 
+.resume-divider {
+    border: 0;
+    border-top: 1px solid #d8d8d8;
+    margin: 0 0 2rem 0;
+    width: 100%;
+}
+
 /* -------------------------------------------------------------------
 * responsive:
 * resume
